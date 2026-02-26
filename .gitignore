@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+
+# Logs de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de sistema operativo (basura)
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno (claves secretas)
+.env
