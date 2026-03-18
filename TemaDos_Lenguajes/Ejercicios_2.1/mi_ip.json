@@ -1,6 +1,6 @@
 [
     {
-        "ip": "187.150.185.192",
+        "ip": "",
         "isp": {
             "asn": "AS8151",
             "org": "Uninet S.A. de C.V.",
@@ -9,12 +9,12 @@
         "location": {
             "country": "Mexico",
             "country_code": "MX",
-            "city": "Chetumal",
-            "state": "Quintana Roo",
+            "city": "",
+            "state": "",
             "zipcode": "",
-            "latitude": 18.49244750114689,
-            "longitude": -88.30589865968223,
-            "timezone": "America/Cancun",
+            "latitude": 1,
+            "longitude": 1,
+            "timezone": "",
             "localtime": "2026-03-18T16:20:25"
         },
         "risk": {
@@ -27,21 +27,21 @@
         }
     },
     {
-        "ip": "187.150.185.192",
+        "ip": "",
         "isp": {
-            "asn": "AS8151",
+            "asn": "",
             "org": "Uninet S.A. de C.V.",
             "isp": "Uninet S.A. de C.V."
         },
         "location": {
             "country": "Mexico",
             "country_code": "MX",
-            "city": "Chetumal",
-            "state": "Quintana Roo",
+            "city": "",
+            "state": "",
             "zipcode": "",
-            "latitude": 18.52181332012564,
-            "longitude": -88.28639700720318,
-            "timezone": "America/Cancun",
+            "latitude": 1,
+            "longitude": 1,
+            "timezone": "",
             "localtime": "2026-03-18T16:20:25"
         },
         "risk": {
