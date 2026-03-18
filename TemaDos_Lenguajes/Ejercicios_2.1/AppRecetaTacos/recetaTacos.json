@@ -1,0 +1,109 @@
+[
+  {
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco lechon",
+    "precio": 20.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Puerco",
+        "preparacion": "Horneado"
+      },
+      "salsa": {
+        "nombre": "Tomate verde",
+        "picor": "Medio"
+      },
+      "acompañamientos": [
+        {
+          "nombre": "Cebolla",
+          "cantidad": "1 cucharada",
+          "ingredientes": ["Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+        },
+        {
+          "nombre": "Guacamole",
+          "cantidad": "2 cucharadas",
+          "ingredientes": ["Aguacate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "0002",
+    "tipo": "taco",
+    "nombre": "Taco de Cochinita Pibil",
+    "precio": 22.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Cerdo",
+        "preparacion": "Horneado en pib con achiote"
+      },
+      "salsa": {
+        "nombre": "Salsa Xnipec",
+        "picor": "Muy Alto"
+      },
+      "acompañamientos": [
+        {
+          "nombre": "Cebolla morada encurtida",
+          "cantidad": "1 cucharada",
+          "ingredientes": ["Cebolla morada", "Naranja agria", "Orégano", "Sal"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "0003",
+    "tipo": "taco",
+    "nombre": "Taco de Relleno Negro",
+    "precio": 25.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Pavo",
+        "preparacion": "Hervido en recado negro"
+      },
+      "salsa": {
+        "nombre": "Caldo de relleno negro",
+        "picor": "Bajo"
+      },
+      "acompañamientos": [
+        {
+          "nombre": "Huevo cocido",
+          "cantidad": "1/4 de pieza",
+          "ingredientes": ["Huevo", "Sal"]
+        },
+        {
+          "nombre": "Chile habanero picado",
+          "cantidad": "Al gusto",
+          "ingredientes": ["Chile habanero", "Limón"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "0004",
+    "tipo": "taco",
+    "nombre": "Taco de Poc Chuc",
+    "precio": 24.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Cerdo",
+        "preparacion": "Asado al carbón marinado en naranja agria"
+      },
+      "salsa": {
+        "nombre": "Chiltomate",
+        "picor": "Medio"
+      },
+      "acompañamientos": [
+        {
+          "nombre": "Cebolla asada",
+          "cantidad": "1 porción",
+          "ingredientes": ["Cebolla blanca asada"]
+        },
+        {
+          "nombre": "Frijoles colados",
+          "cantidad": "1 cucharada",
+          "ingredientes": ["Frijol negro", "Manteca de cerdo", "Epazote"]
+        }
+      ]
+    }
+  }
+]

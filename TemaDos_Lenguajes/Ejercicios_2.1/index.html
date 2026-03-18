@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Receta</title>
+    <style>
+        .card { border: 2px solid #2ecc71; border-radius: 10px; padding: 20px; width: 300px; font-family: sans-serif; }
+        .precio { color: #e67e22; font-weight: bold; font-size: 1.2em; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+
+    <div id="taco-card" class="card">
+        <h1 id="taco-nombre">Cargando...</h1>
+        <p class="precio">Precio: <span id="taco-precio">0</span></p>
+        <h3>Acompañamientos:</h3>
+        <ul id="lista-acompañamientos">
+        </ul>
+    </div>
+
+    <script>
+        // JSON
+        const taco = {
+          "id": "0001",
+          "tipo": "taco",
+          "nombre": "Taco lechon",
+          "precio": 20.00,
+          "ingredientes": {
+            "proteina": {
+              "nombre": "Puerco",
+              "preparacion": "Horneado"
+            },
+            "salsa": {
+              "nombre": "Tomate verde",
+              "picor": "Medio"
+            },
+            "acompañamientos": [
+              {
+                "nombre": "Cebolla",
+                "cantidad": "1 cucharada",
+                "ingredientes": ["Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+              },
+              {
+                "nombre": "Guacamole",
+                "cantidad": "2 cucharadas",
+                "ingredientes": ["Aguacate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+              },
+              {
+                "nombre": "Chile Habanero picado",
+                "cantidad": "1/2 cucharadita",
+                "ingredientes": ["Habanero", "Jugo de limón", "Sal"]
+              }
+            ]
+          }
+        };
+
+        // TU CÓDIGO AQUÍ:
+
+        // 1. Insertar nombre en el h1
+        // Buscar el elemento por su ID y le cambiamos el texto
+        document.getElementById("taco-nombre").textContent = taco.nombre;
+
+        // 2. Insertar precio con formato moneda
+        // Agregar el símbolo de peso y aseguramos que tenga 2 decimales (.toFixed(2))
+        document.getElementById("taco-precio").textContent = "$" + taco.precio.toFixed(2);
+
+        // 3. Recorrer acompañamientos y crear <li> para cada uno
+        const listaUl = document.getElementById("lista-acompañamientos");
+
+        taco.ingredientes.acompañamientos.forEach(elemento => {
+          // Creamos el elemento de lista
+          const nuevoLi = document.createElement("li");
+    
+          // Convertimos el arreglo de ingredientes en un texto separado por comas
+          const listaDeIngredientes = elemento.ingredientes.join(", ");
+    
+          // Armamos el contenido usando innerHTML para darle un mejor formato visual
+          nuevoLi.innerHTML = `
+          <b>${elemento.nombre}</b> (${elemento.cantidad}) <br> 
+          <small><i>Lleva: ${listaDeIngredientes}</i></small> <br><br>
+          `;
+    
+         // Lo agregamos a la lista principal
+         listaUl.appendChild(nuevoLi);
+        });
+    </script>
+</body>
+</html>
