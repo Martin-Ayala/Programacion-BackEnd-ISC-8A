@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Banxico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+    
+    <div class="monitor-container">
+        <div class="date-badge"><%= fecha %></div>
+        <h1 class="title-main"><%= titulo %></h1>
+        <div class="value-badge"><%= valor %></div>
+        <p class="description-box"><%= descripcion %></p>
+        
+
+        <form action="/" method="GET" class="selector-form">
+            <select name="indicador" class="dropdown">
+                <option value="dolar">💵 Dólar FIX</option>
+                <option value="euro">💶 Euro Oficial</option>
+                <option value="tiie">📈 Tasa TIIE (28 días)</option>
+                <option value="udis">🛡️ Valor UDIS</option>
+            </select>
+            <button type="submit" class="btn-actualizar">Consultar Indicador</button>
+        </form>
+    </div>
+
+</body>
+</html>

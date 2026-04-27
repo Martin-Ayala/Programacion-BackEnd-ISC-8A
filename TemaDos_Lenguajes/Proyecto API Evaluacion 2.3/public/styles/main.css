@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo principal con imagen y filtro azul corporativo transparente */
+body {
+    /* La magia está aquí: Un degradado radial transparente ENCIMA de tu imagen */
+    background: 
+        radial-gradient(circle, rgba(26, 69, 133, 0.6) 0%, rgba(13, 42, 87, 0.9) 100%),
+        url('/images/banxico.jpg'); /* Ruta de tu imagen */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor central */
+.monitor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.15); /* Pequeño recuadro translúcido de fondo */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Cápsula de la fecha */
+.date-badge {
+    background-color: #709edb;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título de la Serie (Ej. TASA TIIE) */
+h1.title-main {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Cápsula gigante del valor */
+.value-badge {
+    background-color: #143d7c;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 3.5rem; 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- SECCIÓN DEL FORMULARIO --- */
+.selector-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+}
+
+/* Lista desplegable */
+.dropdown {
+    background-color: #0d2a57;
+    color: white;
+    border: 1px solid #709edb;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Botón de consultar */
+.btn-actualizar {
+    background-color: #709edb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-actualizar:hover {
+    background-color: #5587c9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- CUADRO DE DESCRIPCIÓN --- */
+.description-box {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro transparente */
+    color: #cbd5e1; /* Texto azul muy claro para no cansar la vista */
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 450px;
+    margin-top: 25px;
+    border-left: 4px solid #709edb; /* Línea decorativa azul a la izquierda */
+}
