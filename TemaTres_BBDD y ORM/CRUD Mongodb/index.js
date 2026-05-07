@@ -36,12 +36,12 @@ app.get('/', (req, res) => {
 
 // --- RUTAS CRUD ---
 
-// 1. CREAR (POST) - Con validación manual simulando el Schema de Mongoose
+// 1. CREAR (POST)
 app.post('/usuarios', async (req, res) => {
     try {
         const { nombre, edad, correo } = req.body;
 
-        // Validación manual de datos obligatorios y tipos
+        // Validación manual de datos
         if (!nombre || typeof nombre !== 'string') {
             return res.status(400).json({ error: 'Ingresar el nombre' });
         }
@@ -52,7 +52,6 @@ app.post('/usuarios', async (req, res) => {
             return res.status(400).json({ error: 'Ingresar el correo' });
         }
 
-        // Creación manual de timestamps
         const fechaActual = new Date();
         const nuevoUsuario = {
             nombre: nombre,
